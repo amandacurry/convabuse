@@ -65,38 +65,36 @@ The columns are:
 
 In (2), the dataset is divided into train, vailidation, and test splits. 
 (2) contains the same fields as (1), but each row includes all the annotators responses, with the annotator response column headers preceded by the annotator ID, e.g. `Annotator1.is_abuse.-1`.
-It also includes an extra column `is_abuse_majority`, representing the majority vote of the annotators on the binary abuse/not abuse task.
 
 | Column | Column header                   |
 | :----- | :------------------------------ |
 | 0.     | `example_id`                    |
 | 1.     | `conv_id`                       |  
-| 3.     | `prev_agent`                    |
-| 4.     | `prev_user`                     |
-| 5.     | `agent`                         |
-| 6.     | `user`                          |        
-| 7.     | `bot`                           |
-| 8.     | `Annotator1_is_abuse.1`         |
-| 9.     | `Annotator1_is_abuse.0`         |
-| 10.    | `Annotator1_is_abuse.-1`        |
-| 11.    | `Annotator1_is_abuse.-2`        |
-| 12.    | `Annotator1_is_abuse.-3`        |
-| 13.    | `Annotator1_type.ableist`       |
-| 14.    | `Annotator1_type.homophobic`    |
-| 15.    | `Annotator1_intellectual`       |
-| 16.    | `Annotator1_racist`             |
-| 17.    | `Annotator1_sexism`             |
-| 18.    | `Annotator1_sex_harassment`     | 
-| 19.    | `Annotator1_transphobic`        |
-| 20.    | `Annotator1_target.generalised` |
-| 21.    | `Annotator1_target.individual`  |
-| 22.    | `Annotator1_target.system`      |
-| 23.    | `Annotator1_explicit`           |
-| 24.    | `Annotator1_implicit`           |
-| 25.    | `Annotator2_is_abuse.1`         |
+| 2.     | `prev_agent`                    |
+| 3.     | `prev_user`                     |
+| 4.     | `agent`                         |
+| 5.     | `user`                          |        
+| 6.     | `bot`                           |
+| 7.     | `Annotator1_is_abuse.1`         |
+| 8.     | `Annotator1_is_abuse.0`         |
+| 9.     | `Annotator1_is_abuse.-1`        |
+| 10.    | `Annotator1_is_abuse.-2`        |
+| 11.    | `Annotator1_is_abuse.-3`        |
+| 12.    | `Annotator1_type.ableist`       |
+| 13.    | `Annotator1_type.homophobic`    |
+| 14.    | `Annotator1_intellectual`       |
+| 15.    | `Annotator1_racist`             |
+| 16.    | `Annotator1_sexism`             |
+| 17.    | `Annotator1_sex_harassment`     | 
+| 18.    | `Annotator1_transphobic`        |
+| 19.    | `Annotator1_target.generalised` |
+| 20.    | `Annotator1_target.individual`  |
+| 21.    | `Annotator1_target.system`      |
+| 22.    | `Annotator1_explicit`           |
+| 23.    | `Annotator1_implicit`           |
+| 24.    | `Annotator2_is_abuse.1`         |
 | ...    | ...                             |
 | 142.   | `Annotator8_implicit`           |
-| 143.   | `is_abuse_majority`             |
 
 
 Note that for privacy reasons, we provide data from CarbonBot and E.L.I.Z.A only. We are unable to release the examples from Alana used in the paper.
